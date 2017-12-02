@@ -53,12 +53,12 @@ function loadSkyBox() {
 	
 		// Load the skybox images and create list of materials
 		var materials = [
-			createMaterial( 'https://lunarowlet.github.io/Waves/img/skyX55+x.png' ), // right
-			createMaterial( 'https://lunarowlet.github.io/Waves/img/skyX55-x.png' ), // left
-			createMaterial( 'https://lunarowlet.github.io/Waves/img/skyX55+y.png' ), // top
-			createMaterial( 'https://lunarowlet.github.io/Waves/img/seabed_ny.png' ), // bottom
-			createMaterial( 'https://lunarowlet.github.io/Waves/img/skyX55+z.png' ), // back
-			createMaterial( 'https://lunarowlet.github.io/Waves/img/skyX55-z.png' )  // front
+			createMaterial( 'https://lunarowlet.github.io/Waves/img/box_right.bmp' ), // right
+			createMaterial( 'https://lunarowlet.github.io/Waves/img/box_left.bmp' ), // left
+			createMaterial( 'https://lunarowlet.github.io/Waves/img/box_top.bmp' ), // top
+			createMaterial( 'https://lunarowlet.github.io/Waves/img/seabed.png' ), // bottom
+			createMaterial( 'https://lunarowlet.github.io/Waves/img/box_back.bmp' ), // back
+			createMaterial( 'https://lunarowlet.github.io/Waves/img/box_front.bmp' )  // front
 		];
 		
 		// Create a large cube
