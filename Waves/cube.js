@@ -53,12 +53,12 @@ function loadSkyBox() {
 	
 		// Load the skybox images and create list of materials
 		var materials = [
-			createMaterial( '/img/skyX55+x.png' ), // right
-			createMaterial( '/img/skyX55-x.png' ), // left
-			createMaterial( '/img/skyX55+y.png' ), // top
-			createMaterial( '/img/seabed_ny.png' ), // bottom
-			createMaterial( '/img/skyX55+z.png' ), // back
-			createMaterial( '/img/skyX55-z.png' )  // front
+			createMaterial( 'https://lunarowlet.github.io/Waves/img/skyX55+x.png' ), // right
+			createMaterial( 'https://lunarowlet.github.io/Waves/img/skyX55-x.png' ), // left
+			createMaterial( 'https://lunarowlet.github.io/Waves/img/skyX55+y.png' ), // top
+			createMaterial( 'https://lunarowlet.github.io/Waves/img/seabed_ny.png' ), // bottom
+			createMaterial( 'https://lunarowlet.github.io/Waves/img/skyX55+z.png' ), // back
+			createMaterial( 'https://lunarowlet.github.io/Waves/img/skyX55-z.png' )  // front
 		];
 		
 		// Create a large cube
@@ -76,7 +76,7 @@ function createMaterial( path ) {
 	return material; 
 }
 
-var bmap =  THREE.ImageUtils.loadTexture("/img/seabed.png", {}, function(){});
+var bmap =  THREE.ImageUtils.loadTexture("https://lunarowlet.github.io/Waves/img/seabed.png", {}, function(){});
 
 var planeGeometry = new THREE.PlaneGeometry(300, 300, 300, 300);
 var planeMaterial = new THREE.MeshPhongMaterial({  color: 0x1A528F, shading: THREE.FlatShading, transparent: true, map: bmap });
