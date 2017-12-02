@@ -23,7 +23,7 @@ function init() {
 	var light = new THREE.DirectionalLight(0xaaaae5, 2);
 	light.position.set(9, 13, -40);
     scene.add(light);
-	//scene.add(new THREE.PointLightHelper(light, 3));
+	scene.add(new THREE.PointLightHelper(light, 3));
     
 	// Create the sky box
 	loadSkyBox();
@@ -53,8 +53,8 @@ function loadSkyBox() {
 	
 		// Load the skybox images and create list of materials
 		var materials = [
-			createMaterial( 'https://lunarowlet.github.io/Waves/img/box_right.bmp' ), // right
-			createMaterial( 'https://lunarowlet.github.io/Waves/img/box_left.bmp' ), // left
+			createMaterial( 'https://lunarowlet.github.io/Waves/img/box_left.bmp' ), // right
+			createMaterial( 'https://lunarowlet.github.io/Waves/img/box_right.bmp' ), // left
 			createMaterial( 'https://lunarowlet.github.io/Waves/img/box_top.bmp' ), // top
 			createMaterial( 'https://lunarowlet.github.io/Waves/img/seabed.png' ), // bottom
 			createMaterial( 'https://lunarowlet.github.io/Waves/img/box_back.bmp' ), // back
