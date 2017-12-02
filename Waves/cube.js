@@ -18,7 +18,7 @@ function init() {
     camera.position.set(-0, 10, 30);
 
 	var light = new THREE.DirectionalLight(0xffffff, 1);
-	light.position.set(0, 20, 0);
+	light.position.set(0, 1, 0);
     scene.add(light);
     
 	loadSkyBox();
