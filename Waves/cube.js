@@ -20,10 +20,10 @@ function init() {
     camera.position.set(-0, 10, 30);
 
     // Add a light
-	var light = new THREE.DirectionalLight(0xaaaae5, 2);
-	light.position.set(9, 13, -40);
+	var light = new THREE.DirectionalLight(0xffffff, 1);
+	light.position.set(0, 1, 0);
     scene.add(light);
-	scene.add(new THREE.PointLightHelper(light, 3));
+	//scene.add(new THREE.PointLightHelper(light, 3));
     
 	// Create the sky box
 	loadSkyBox();
@@ -57,8 +57,8 @@ function loadSkyBox() {
 			createMaterial( 'https://lunarowlet.github.io/Waves/img/box_right.bmp' ), // left
 			createMaterial( 'https://lunarowlet.github.io/Waves/img/box_top.bmp' ), // top
 			createMaterial( 'https://lunarowlet.github.io/Waves/img/seabed.png' ), // bottom
-			createMaterial( 'https://lunarowlet.github.io/Waves/img/box_back.bmp' ), // back
-			createMaterial( 'https://lunarowlet.github.io/Waves/img/box_front.bmp' )  // front
+			createMaterial( 'https://lunarowlet.github.io/Waves/img/box_front.bmp' ), // back
+			createMaterial( 'https://lunarowlet.github.io/Waves/img/box_back.bmp' )  // front
 		];
 		
 		// Create a large cube
