@@ -89,7 +89,7 @@ function animate(ts) {
     	var v = mesh.geometry.vertices[i];
     	var dist = new THREE.Vector2(v.x, v.y).sub(center);
     	var size = 7.0;
-    	var magnitude = 3;
+    	var magnitude = 5;
     	v.z = Math.sin(dist.length()/-size + (ts/500)) * magnitude;
   	}
   	mesh.geometry.verticesNeedUpdate = true;
